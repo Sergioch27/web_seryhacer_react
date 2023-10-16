@@ -1,10 +1,10 @@
-import logo from'../../assets/logotype.png'
 import './NavTopBar.css'
 import IconFont from '../IconFont/IconFont'
-import Quantity from '../quantity/quantity'
-import { faCartShopping, faRightToBracket, faUserPen } from '@fortawesome/free-solid-svg-icons'
+import CartWidget from '../CartWidget/CartWidget'
+import { faRightToBracket, faUserPen } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
+import Brand from '../Brand/Brand'
 const NavTopBar = () => {
     return (
         <nav>
@@ -23,7 +23,7 @@ const NavTopBar = () => {
         </ul>
       </div>
       <div className="logo_top_section">
-        <a href="./index"><img src={logo} alt="logo_seryhacer" /></a>
+      <Brand logoimg='/src/assets/logotype.png' alt='Logo'/>
       </div>
       <div className="header_top_section_3">
         <ul>
@@ -34,8 +34,7 @@ const NavTopBar = () => {
           <IconFont icon={faUserPen} className='iconStyle header_button' label="REGISTRASE"/>
           </li>
           <li id="cart" >
-            <Quantity className="qantity" quantityNum="0"/>
-            <IconFont icon={faCartShopping} className='iconStyle header_button' />
+            <CartWidget className="qantity" quantityNum="0"/>
           </li>
           <li id="logout" className="hide">
           <IconFont icon={faRightToBracket} className='iconStyle header_button' label="CERRAR SESSION"/>

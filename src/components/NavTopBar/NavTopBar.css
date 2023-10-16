@@ -116,12 +116,6 @@
   }
   .qantity {
     position: absolute;
-    right: 250px;
-    top: 14px;
-    background: #A168DE;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-weight: 600;
-    color: #fff;
+    right: 8%;
+    top: 25%;
   }
