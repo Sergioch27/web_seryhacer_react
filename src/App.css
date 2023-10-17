@@ -17,8 +17,15 @@
   color: #888;
 }
 .WebTitle {
-  position: absolute;
     display: flex;
-    width: 100%;
     justify-content: center;
+    margin-top: 5%;
+}
+.CategoryList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.CategoryList li {
+  list-style: none;
 }

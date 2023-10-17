@@ -5,7 +5,7 @@ const ItemListContainer = (props) => {
         <ul>
             <li>
                 <button>
-                    {props.category}
+                    {props.product}
                 </button>
             </li>
         </ul>
