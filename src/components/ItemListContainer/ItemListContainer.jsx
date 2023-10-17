@@ -4,9 +4,9 @@ const ItemListContainer = (props) => {
     return (
         <ul>
             <li>
-                <button>
+                <h2>
                     {props.product}
-                </button>
+                </h2>
             </li>
         </ul>
     )
