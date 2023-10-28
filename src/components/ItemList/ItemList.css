@@ -1,0 +1,9 @@
+.boxItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    height: fit-content;
+    padding: 10px;
+    margin: 2rem;
+}

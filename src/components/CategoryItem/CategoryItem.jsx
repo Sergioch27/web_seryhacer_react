@@ -1,12 +1,14 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
 
-const CategoryItem = (props) => {
+const CategoryItem = () => {
+
     return (
         <ul>
             <li>
-                <button>
-                    {props.category}
-                </button>
+                <NavLink to='/category/Accion' >Accion</NavLink>
+                <NavLink to='/category/SeryHacer' >SeryHacer</NavLink>
+                <NavLink to='/category/Reflexion' >Reflexion</NavLink>
             </li>
         </ul>
     )
