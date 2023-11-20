@@ -1,0 +1,20 @@
+.categoryList {
+    display: flex;
+    justify-content: center;
+}
+.categoryList ul {
+    display: flex;
+}
+.categoryList li {
+    margin: 10px;
+    background-color: #A168DE;
+    padding: 10px;
+}
+.categoryList a {
+    color: #000;
+}
+.categoryList a:hover {
+    color: #13B0B9;
+}
+
+

@@ -29,8 +29,8 @@ function App() {
                 </section>
              }
         />
-        <Route path='/category/:categoryId' element={<ItemListContainer />}/>
         <Route path='/box/:ItemId' element={<ItemDetailContainer />}/>
+        <Route path='/categoryName/:categoryId' element={<ItemListContainer />}/>
       </Routes>
     </BrowserRouter>
     </>

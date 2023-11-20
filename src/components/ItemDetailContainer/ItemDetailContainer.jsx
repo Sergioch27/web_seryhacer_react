@@ -1,25 +1,44 @@
+import { useEffect, useState } from "react"
+import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
-import { GetProductById } from "../../../asyncMock"
-import useAsync from "../../hooks/useAsync"
-import Loading from "../Loading/Loading"
+import { getProductById } from "../../service/firebase/firestore/products"
 import React from "react"
-import ItemDetail from "../ItemDetail/ItemDetail"
 
-const ItemDetailContainer = ()=>{
-    const asyncFunction = () => GetProductById(ItemId);
-    const {data: products, loading, error} = useAsync(asyncFunction, [])
+const ItemDetailContainer = () => {
+    const [product, setProduct] = useState(null)
+    const [loading, setLoading] = useState(true)
+
     const { ItemId } = useParams()
 
-    if(loading){
-        return (
-            <Loading />
-        )
+    useEffect(() => {
+        setLoading(true)
+        getProductById(ItemId)
+            .then(response => {
+                setProduct(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+
+    }, [ItemId])
+
+    if(loading) {
+        return <h1>Cargando Producto</h1>
     }
-    if(error){
-        return <h1>Producto no encontrado</h1>
+
+    if(!product) {
+        return <h1>El producto no existe</h1>
     }
+
     return (
-        <ItemDetail  products={products} />
+        <main >
+            <h1>Detalle del producto</h1>
+            <ItemDetail {...product}/>
+        </main>
     )
 }
+
 export default ItemDetailContainer

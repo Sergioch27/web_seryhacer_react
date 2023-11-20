@@ -1,4 +1,7 @@
 .boxItem {
+    text-align: center;
+    color: black;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,4 +9,14 @@
     height: fit-content;
     padding: 10px;
     margin: 2rem;
+}
+.boxItem img {
+    width: 100%;
+}
+.boxItem h2 {
+    font-size: 12px;
+}
+.products-list-container {
+    display: flex;
+    justify-content: center;
 }

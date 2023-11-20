@@ -1,16 +1,18 @@
-import React from "react";
+import React, { memo } from "react";
 import useAsync from "../../hooks/useAsync";
-import {GetProduct, GetProductByCategory} from "../../../asyncMock";
+import { GetProduct } from "../../service/firebase/firestore/products"; 
 import ItemList from "../ItemList/ItemList";
 import Loading from "../Loading/Loading";
 import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 
-const ItemListContainer = () => {
-    const {categoryId} = useParams()
+const MemoizedItemList = memo(ItemList)
+
+
+const  ItemListContainer =  () => {
+    const {categoryId} =  useParams()
     console.log(categoryId);
-    console.log(GetProductByCategory())
-    const asyncFunction = () =>  categoryId ? GetProductByCategory(categoryId) : GetProduct();
+    const asyncFunction = () =>  GetProduct();
     console.log(asyncFunction());
     const {data: products, loading, error} = useAsync(asyncFunction, [categoryId])
 
@@ -24,9 +26,13 @@ const ItemListContainer = () => {
     if(error) {
         return <h1>Error al mostrar los productos</h1>
     }
+    if(products.length === 0) {
+        return <h1>No existen productos para esta categoria</h1>
+    }
+
     return (
         <>
-                <ItemList  className='ListContainer' products={products}/>
+                <MemoizedItemList products={products}/>
         </>
     )
 }
