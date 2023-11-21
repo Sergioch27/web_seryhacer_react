@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "firebase": "^10.6.0",
     "react": "^18.2.0",
+    "react-big-calendar": "^1.8.5",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0"
   },
@@ -27,6 +28,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^4.4.5"
+    "vite": "^4.5.0"
   }
 }

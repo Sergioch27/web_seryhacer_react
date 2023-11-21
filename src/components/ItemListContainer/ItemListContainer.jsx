@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import useAsync from "../../hooks/useAsync";
 import { GetProduct } from "../../service/firebase/firestore/products"; 
 import ItemList from "../ItemList/ItemList";
@@ -12,7 +12,7 @@ const MemoizedItemList = memo(ItemList)
 const  ItemListContainer =  () => {
     const {categoryId} =  useParams()
     console.log(categoryId);
-    const asyncFunction = () =>  GetProduct();
+    const asyncFunction = () =>  GetProduct(categoryId);
     console.log(asyncFunction());
     const {data: products, loading, error} = useAsync(asyncFunction, [categoryId])
 

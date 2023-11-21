@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.css'
 import React from "react"
+import CustomWeekView from "../CalendarGrid/CalendarGrid"
 
 const InputCount = ({ onAdd, stock, initial= 1 }) => {
     const [count, setCount] = useState(initial)
@@ -89,6 +90,9 @@ const ItemDetail = ({ id, title, categoryName, images, price, stock, description
             </section>
             <ItemCount stock={stock} onAdd={handleOnAdd}/>
           </div>
+          <div>
+          <CustomWeekView localizer={localizer} />
+        </div>
             {/* <footer>
                 {
                     isInCart(id) ? (

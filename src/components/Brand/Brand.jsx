@@ -1,12 +1,13 @@
-import React from "react"
+import { useNavigate } from "react-router-dom"
 
 
 
 const Brand = (props) => {
+    const navigate = useNavigate()
     return (
-        <a href="./index">
+        <span  onClick={() => navigate('/')}>
             <img src={props.logoimg} alt={props.alt}/>
-        </a>
+        </span>
     )
 }
 
