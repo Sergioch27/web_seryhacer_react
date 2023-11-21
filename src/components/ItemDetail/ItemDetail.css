@@ -18,5 +18,15 @@ button{
     transition: border-color 0.25s;
 }
 .add-to-cart {
-    
+    display: flex;
+}
+.add-to-cart  p {
+    color: #000;
+    margin: 10px 10px 10px 10px;
+}
+.button-add-cart {
+    margin: 0 10px 0 10px;
+}
+.go-to-chekout {
+    color: #000;
 }

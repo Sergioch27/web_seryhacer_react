@@ -1,0 +1,59 @@
+.cart-content-page h1 {
+    color: #000;
+    text-align: center;
+} 
+.cart-container {
+    display: flex;
+    padding: 20px 40px 40px;
+}
+.product-container{
+    color: black;
+    height: 120px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 92%;
+    background: white;
+    border: 1px solid #ACACAC;
+    border-radius: 24px;
+    padding: 20px;
+}
+.cart-products-container {
+    width: 80%;
+}
+.cart-total-container {
+    color: #000;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    width: 30%;
+    padding: 20px;
+    height: 30%;
+}
+.cart-total-container h5 {
+    text-align: center;
+    font-size: 20px;
+}
+.Subtotal, .Total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.data-product {
+    margin: auto;
+}
+.button-zone {
+    height: 50px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+.content-go-pay {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.go-pay {
+    color: #000;
+}

@@ -7,6 +7,7 @@ export const createAdaptedProducts = (doc) => {
         images: fields.images,
         categoryName: fields.categoryName,
         price: fields.price,
-        description: fields.description
+        description: fields.description,
+        stock: fields.stock
     }
 }

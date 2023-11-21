@@ -34,7 +34,7 @@ const NavTopBar = () => {
           <IconFont icon={faUserPen} className='iconStyle header_button' label="REGISTRASE"/>
           </li>
           <li id="cart" >
-            <CartWidget className="qantity" quantityNum="0"/>
+            <CartWidget className="qantity" />
           </li>
           <li id="logout" className="hide">
           <IconFont icon={faRightToBracket} className='iconStyle header_button' label="CERRAR SESSION"/>

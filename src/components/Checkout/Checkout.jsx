@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useCart } from "../../context/CartContext"
 import { getDocs, collection, query, where, documentId, writeBatch, addDoc } from 'firebase/firestore'
-import { db } from "../../services/firebase/firebaseConfig"
+import { db } from "../../service/firebase/firebaseConfig"
 
 const Checkout = () => {
     const [orderId, setOrderId] = useState('')
