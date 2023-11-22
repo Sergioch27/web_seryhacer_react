@@ -1,6 +1,6 @@
 # React js WebSite Ecommerce 🚀
 
-Pagina web implementada con react js, usando la herramienta de compilacion [Vite](https://vitejs.dev/), la pagina web es un ecommerce, que a futuro va a funcionar permitiendo reservar Box para atencion psicologia por horas, usando un calendario sobre cada producto para tomar la hora. Por ahora esta implemtado solo como ecommerce tradicional.
+Página web implementada con React js, usando la herramienta de compilación [Vite](https://vitejs.dev/), la página web es un e-commerce, que a futuro va a funcionar, permitiendo reservar Box para atención psicología por horas, usando un calendario sobre cada producto para tomar la hora. Por ahora está implementado solo como e-commerce tradicional.
 
 ![Home de Site](https://i.imgur.com/HieauBI.png)
 
@@ -15,7 +15,7 @@ npm install
 
 ```
 
-#### 2. Desplegar WebSite Modo Dev 
+#### 2. Desplegar Web Site Modo Dev 
 
 Ejecute este comando para iniciar el servidor de desarrollo y compilación de la web:
 ```
@@ -27,8 +27,8 @@ node version 21.2.0
 ```
 [Descarga node](https://nodejs.org/en)
 
-## Desarllado por:
+## Desarrollado por:
 
 Sergio Chavarri - Embajador CoderHouse
 
-[Linkedin](https://www.linkedin.com/in/sergio-a-chavarri-cabello-26b639104/)
+[LinkedIn](https://www.linkedin.com/in/sergio-a-chavarri-cabello-26b639104/)
